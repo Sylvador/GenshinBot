@@ -1,6 +1,6 @@
 from peewee import *
 
-db = SqliteDatabase('db/users.db')
+db = SqliteDatabase('../dbs/GenshinBotDB/users.db')
 
 class User(Model):
     id = PrimaryKeyField(unique=True)
@@ -8,7 +8,7 @@ class User(Model):
     ltuid = IntegerField()
     ltoken = CharField()
     timer = BooleanField(default=False)
-    resin_check = BooleanField(default=False)
+    reminder = BooleanField(default=False)
     chat_id = IntegerField()
     lang = CharField()
 

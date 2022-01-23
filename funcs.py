@@ -30,7 +30,7 @@ async def send_resin_info(user_id):
 #Проверка не осталось ли до заполнения смолы меньше часа. Если да, то отправить пользователю предупреждение
 async def reminder_on(user_id):
     await reminder_switch(user_id, 1)
-    while User.get(User.chat_id==user_id).resin_check:
+    while User.get(User.chat_id==user_id).reminder:
         info = await get_resin_info(user_id)
         t = datetime.strptime(info['until_resin_limit'], "%H:%M:%S")
         t = timedelta(hours=t.hour,minutes=t.minute,seconds=t.second)
