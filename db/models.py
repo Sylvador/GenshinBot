@@ -1,6 +1,6 @@
 from peewee import *
 
-db = SqliteDatabase('../dbs/GenshinBotDB/users.db')
+db = SqliteDatabase('../GenshinBotDB/users.db')
 
 class User(Model):
     id = PrimaryKeyField(unique=True)
