@@ -3,11 +3,14 @@ import genshinstats as gs
 from genshinstats.hoyolab import get_record_card
 from datetime import timedelta, datetime
 from telebot.async_telebot import AsyncTeleBot
-from config import API_KEY
 from db.dbcrud import *
+from dotenv import load_dotenv
+import os
 import response_text
 
-bot = AsyncTeleBot(API_KEY)
+load_dotenv()
+
+bot = AsyncTeleBot(os.getenv("API_KEY"))
 
 #Получение инфы о смоле
 async def get_resin_info(user_id):
