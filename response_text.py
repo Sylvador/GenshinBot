@@ -19,7 +19,10 @@ class ru:
 Еще больше команд:
 1. "/reminderon" - напоминает о заполнении смолы до максимума, если до этого осталось меньше часа
 2. "/starttimer" - запустить таймер, по которому я буду тебя уведомлять о количестве смолы на данный момент
-3. "/stoptimer" - остановить таймер "starttimer"'''
+3. "/stoptimer" - остановить таймер "starttimer".
+
+sylvadorr@gmail.com - Пожалуйста, свяжись со мной, если у тебя есть вопросы или предложения
+/contact" - чтобы увидеть мои контакты снова'''
 
     ltoken_message = "ltoken сохранён"
 
@@ -40,6 +43,8 @@ class ru:
     error_message = "Что-то пошло не так!"
 
     database_error_message = "Не удалось получить данные о смоле. Убедись, что ты ввел правильные ltuid и ltoken"
+
+    contact_message = "sylvadorr@gmail.com - Свяжись со мной, если у тебя есть вопросы или предложения"
 
 class en:
     start_message = '''Greetings traveler!
@@ -62,7 +67,10 @@ If the "/resin" command doesn't work, check if the ltuid and ltoken sent are cor
 Even more commands:
 1. "/reminderon" - reminds you if your resin is about to cap, when it's less than an hour is left before it does
 2. "/starttimer" - start a timer, by which I will notify you about the amount of resin at the moment
-3. "/stoptimer" - stop the timer "starttimer"'''
+3. "/stoptimer" - stop the timer "starttimer".
+
+sylvadorr@gmail.com - Please, contact me if you have questions or suggestions
+"/contact" - to see my contacts again'''
 
     ltoken_message = "ltoken saved"
 
@@ -83,3 +91,5 @@ Even more commands:
     error_message = "Something went wrong!"
 
     database_error_message = "Failed to get resin data. Please make sure you entered the correct ltuid and ltoken"
+
+    contact_message = "sylvadorr@gmail.com - Contact me if you have questions or suggestions"

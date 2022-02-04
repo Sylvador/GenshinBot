@@ -7,6 +7,11 @@ async def start(message):
         await save_user(message)
     await bot.send_message(message.chat.id, getattr(response_text, await get_lang(message.chat.id)).start_message)
 
+#Отправить пользователю данные для связи со мной
+@bot.message_handler(commands=['contact'])
+async def start(message):
+    await bot.send_message(message.chat.id, getattr(response_text, await get_lang(message.chat.id)).contact_message)
+
 #Обновить ltuid пользователя
 @bot.message_handler(commands=['ltuid'])
 async def ltuid(message):
